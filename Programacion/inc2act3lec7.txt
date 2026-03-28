@@ -1,0 +1,21 @@
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        int a, b, c;
+
+        Console.WriteLine("Ingrese los 3 lados:");
+        a = Convert.ToInt32(Console.ReadLine());
+        b = Convert.ToInt32(Console.ReadLine());
+        c = Convert.ToInt32(Console.ReadLine());
+
+        if (a == b && b == c)
+            Console.WriteLine("Equilátero");
+        else if (a == b || a == c || b == c)
+            Console.WriteLine("Isósceles");
+        else
+            Console.WriteLine("Escaleno");
+    }
+}
