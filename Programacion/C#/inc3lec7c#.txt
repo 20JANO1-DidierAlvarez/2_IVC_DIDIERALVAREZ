@@ -1,0 +1,38 @@
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        int m;
+        Console.WriteLine("Ingrese el número del mes (1-12):");
+        m = Convert.ToInt32(Console.ReadLine());
+
+        if (m == 1)
+            Console.WriteLine("Enero");
+        else if (m == 2)
+            Console.WriteLine("Febrero");
+        else if (m == 3)
+            Console.WriteLine("Marzo");
+        else if (m == 4)
+            Console.WriteLine("Abril");
+        else if (m == 5)
+            Console.WriteLine("Mayo");
+        else if (m == 6)
+            Console.WriteLine("Junio");
+        else if (m == 7)
+            Console.WriteLine("Julio");
+        else if (m == 8)
+            Console.WriteLine("Agosto");
+        else if (m == 9)
+            Console.WriteLine("Septiembre");
+        else if (m == 10)
+            Console.WriteLine("Octubre");
+        else if (m == 11)
+            Console.WriteLine("Noviembre");
+        else if (m == 12)
+            Console.WriteLine("Diciembre");
+        else
+            Console.WriteLine("Mes inválido");
+    }
+}

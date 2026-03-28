@@ -1,0 +1,26 @@
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        int dia, mes;
+
+        Console.WriteLine("Ingrese el día:");
+        dia = Convert.ToInt32(Console.ReadLine());
+
+        Console.WriteLine("Ingrese el mes:");
+        mes = Convert.ToInt32(Console.ReadLine());
+
+        if (mes == 12 || mes == 1 || mes == 2)
+            Console.WriteLine("Invierno");
+        else if (mes >= 3 && mes <= 5)
+            Console.WriteLine("Primavera");
+        else if (mes >= 6 && mes <= 8)
+            Console.WriteLine("Verano");
+        else if (mes >= 9 && mes <= 11)
+            Console.WriteLine("Otoño");
+        else
+            Console.WriteLine("Mes inválido");
+    }
+}
