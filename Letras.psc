@@ -1,24 +1,15 @@
-Algoritmo Letras
-	Definir A,B,C,D como Real
-	Definir class Como Caracter
+Proceso Notas
 	Definir letra Como Caracter
-	Escribir "Dime una letra: "
+	Escribir "Ingrese una letra:"
 	Leer letra
-
-	Segun nota Hacer
-		"A":
-			Escribir "Obtuviste excelente nota: "
-		"B":
-			Escribir "Obtuviste buena nota "
-		"C":
-			Escribir "Obtuviste una nota regular: "
-		"D":
-			 Escribir "Obtuviste una nota fea: "
-			
+	
+	Segun letra Hacer
+		"A": Escribir "Excelente"
+		"B": Escribir "Bueno"
+		"C": Escribir "Regular"
+		"D": Escribir "Deficiente"
+		"F": Escribir "Reprobado"
 		De Otro Modo:
-			Escribir "Obtuviste una nota horrible "
+			Escribir "No válido"
 	FinSegun
-	
-
-	
-FinAlgoritmo
+FinProceso
