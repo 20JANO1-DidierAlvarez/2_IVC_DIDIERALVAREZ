@@ -1,0 +1,39 @@
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        int cantidad, pago;
+        double precio = 650;
+        double iva = 0.12;
+        double descuento = 0;
+        double total, totalConIVA, totalFinal;
+
+        Console.Write("Cantidad de impresoras: ");
+        cantidad = int.Parse(Console.ReadLine());
+
+        Console.WriteLine("Forma de pago:");
+        Console.WriteLine("1. Efectivo (10%)");
+        Console.WriteLine("2. Tarjeta (5%)");
+        Console.WriteLine("3. Vale (15%)");
+        pago = int.Parse(Console.ReadLine());
+
+        total = cantidad * precio;
+        totalConIVA = total + (total * iva);
+
+        switch (pago)
+        {
+            case 1: descuento = 0.10; break;
+            case 2: descuento = 0.05; break;
+            case 3: descuento = 0.15; break;
+            default: Console.WriteLine("Opción inválida"); break;
+        }
+
+        totalFinal = totalConIVA - (totalConIVA * descuento);
+
+        Console.WriteLine("Total sin descuento: Q" + totalConIVA);
+        Console.WriteLine("Descuento: Q" + (totalConIVA * descuento));
+        Console.WriteLine("Total a pagar: Q" + totalFinal);
+    }
+}

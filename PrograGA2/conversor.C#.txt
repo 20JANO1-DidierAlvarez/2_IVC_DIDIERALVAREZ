@@ -1,0 +1,34 @@
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        double valor;
+        int op;
+
+        Console.Write("Ingrese valor en metros: ");
+        valor = double.Parse(Console.ReadLine());
+
+        Console.WriteLine("1. Pies");
+        Console.WriteLine("2. Centímetros");
+        Console.WriteLine("3. Pulgadas");
+        op = int.Parse(Console.ReadLine());
+
+        switch (op)
+        {
+            case 1:
+                Console.WriteLine("Resultado: " + (valor * 3.28));
+                break;
+            case 2:
+                Console.WriteLine("Resultado: " + (valor * 100));
+                break;
+            case 3:
+                Console.WriteLine("Resultado: " + (valor * 39.37));
+                break;
+            default:
+                Console.WriteLine("Opción inválida");
+                break;
+        }
+    }
+}
