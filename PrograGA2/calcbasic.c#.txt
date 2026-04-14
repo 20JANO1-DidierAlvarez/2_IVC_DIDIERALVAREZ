@@ -1,0 +1,25 @@
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        int n1, n2, op;
+
+        Console.Write("Ingrese dos números: ");
+        n1 = int.Parse(Console.ReadLine());
+        n2 = int.Parse(Console.ReadLine());
+
+        Console.Write("1 Sumar, 2 Restar, 3 Multiplicar, 4 Dividir: ");
+        op = int.Parse(Console.ReadLine());
+
+        switch (op)
+        {
+            case 1: Console.WriteLine("Resultado: " + (n1 + n2)); break;
+            case 2: Console.WriteLine("Resultado: " + (n1 - n2)); break;
+            case 3: Console.WriteLine("Resultado: " + (n1 * n2)); break;
+            case 4: Console.WriteLine("Resultado: " + (n1 / n2)); break;
+            default: Console.WriteLine("Opción inválida"); break;
+        }
+    }
+}
