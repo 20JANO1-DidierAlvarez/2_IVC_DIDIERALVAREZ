@@ -1,0 +1,75 @@
+//Crear una app que simule un sistema de un cajero automatico
+//Tres intentos al tercer intento bloquear la tarjeta
+//Consultar saldo
+//Retirar dinero
+//Deposito
+//Salir
+Algoritmo CajeroAutomatico
+	Definir saldo, deposito, retiro Como Real
+	Definir Opción Como Entero
+	Definir Intentos Como Entero
+	Definir pin, pinCorrecto Como Entero
+	saldo=10000
+	pinCorrecto=1234
+	Intentos=0
+	Mientras Intentos<3 Hacer
+		Escribir Sin Saltar"Ingrese su PIN: "
+		Leer pin
+		Si pin=pinCorrecto Entonces
+			
+			Repetir
+				Escribir " Acceso Concedido Bienvenido a Banrural"
+				Escribir "***********************************"
+				Escribir "*MENU PRINCIPAL"
+				Escribir "1-- Consultar Saldo"
+				Escribir "2-- Depositar Dinero"
+				Escribir "3-- Retirar Dinero"
+				Escribir "4-- Salir"
+				Escribir "***********************************"
+				Escribir "Diga una opcion: "
+				Leer Opción
+				Segun Opción Hacer
+					1:
+						Escribir Sin Saltar "Su saldo actual es: Q ", saldo
+					2:
+						Escribir Sin Saltar "Ingrese el monto a depositar: Q "
+						Leer deposito 
+						saldo=saldo+deposito
+						Escribir "Deposito exitoso saldo nuevo: Q ",saldo
+					3:
+						Escribir Sin Saltar "Ingrese el monto a retirar: Q "
+						Leer retiro
+						
+						Si retiro<=saldo Entonces
+							saldo=saldo-retiro
+							Escribir " Retiro exitoso, Nuevo Saldo: Q ",saldo
+						SiNo
+							Escribir "Fondos insuficientes"
+						FinSi
+					4:
+						Escribir "Gracias por usar el cajero 5B"
+					De Otro Modo:
+						Escribir "Opcion Inválida"
+				Fin Segun
+				
+			Hasta Que Opción==4
+			//Termiinar mi programa
+			Intentos=3
+			SiNo
+			Intentos=Intentos+1
+			Escribir " Pin INORRECTO, intento ", intentos," de 3 "
+		Fin Si
+	Fin Mientras
+	
+	Si intentos== 5 Entonces
+		Escribir "()"
+		Escribir "Tarjeta Bloqueada demasiados intentos fallidos"
+		Escribir "No robe"
+		
+	FinSi
+	Escribir "Espere, saliendo del sistema"
+	Esperar 3 Segundos
+	//BLOQUEO DE LA TARJETA
+	
+	//Validar el acceso por medio del pin
+FinAlgoritmo
