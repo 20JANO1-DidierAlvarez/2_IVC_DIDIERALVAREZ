@@ -1,0 +1,17 @@
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        Console.WriteLine("¿Qué tabla desea ver?");
+        int tabla = int.Parse(Console.ReadLine());
+        int contador = 1;
+
+        while (contador <= 10)
+        {
+            Console.WriteLine(tabla + " x " + contador + " = " + (tabla * contador));
+            contador++;
+        }
+    }
+}

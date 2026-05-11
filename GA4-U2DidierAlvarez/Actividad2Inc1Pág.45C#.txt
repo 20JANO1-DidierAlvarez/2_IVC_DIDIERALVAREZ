@@ -1,0 +1,19 @@
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        int monedas = 0;
+        int nuevasMonedas;
+
+        while (monedas < 350)
+        {
+            Console.WriteLine("Nivel 5 Bloqueado. Tienes: " + monedas + " monedas.");
+            Console.WriteLine("Ingrese monedas obtenidas:");
+            nuevasMonedas = int.Parse(Console.ReadLine());
+            monedas = monedas + nuevasMonedas;
+        }
+        Console.WriteLine("¡Nivel 5 Desbloqueado!");
+    }
+}

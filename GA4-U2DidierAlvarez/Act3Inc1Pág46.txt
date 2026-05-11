@@ -1,0 +1,17 @@
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        Console.WriteLine("Ingrese un número mayor a 20:");
+        int X = int.Parse(Console.ReadLine());
+        int numero = 21;
+
+        while (numero <= X)
+        {
+            Console.WriteLine(numero);
+            numero = numero + 2;
+        }
+    }
+}

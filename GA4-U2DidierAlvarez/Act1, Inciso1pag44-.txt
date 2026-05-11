@@ -1,0 +1,19 @@
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        int pesoTotal = 0;
+        int pesoManzana;
+
+        while (pesoTotal < 1000)
+        {
+            Console.WriteLine("Coloque una manzana (peso en gramos):");
+            pesoManzana = int.Parse(Console.ReadLine());
+            pesoTotal = pesoTotal + pesoManzana;
+            Console.WriteLine("Peso actual: " + pesoTotal + " gramos.");
+        }
+        Console.WriteLine("Se ha alcanzado o superado el kilogramo.");
+    }
+}

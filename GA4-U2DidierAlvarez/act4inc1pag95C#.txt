@@ -1,0 +1,24 @@
+// Ejercicio 1 - Desbloquear Nivel 5
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        int monedas;
+
+        Console.WriteLine("=== Acceso al Nivel 5 ===");
+        Console.Write("Ingrese la cantidad de monedas que tiene el jugador: ");
+        monedas = int.Parse(Console.ReadLine());
+
+        // Repite MIENTRAS tenga menos de 350
+        while (monedas < 350)
+        {
+            Console.WriteLine("Nivel BLOQUEADO. Te faltan " + (350 - monedas) + " monedas.");
+            Console.Write("Gana más monedas e ingresa el nuevo total: ");
+            monedas = int.Parse(Console.ReadLine());
+        }
+
+        Console.WriteLine("¡Nivel 5 DESBLOQUEADO! Puedes ingresar.");
+    }
+}

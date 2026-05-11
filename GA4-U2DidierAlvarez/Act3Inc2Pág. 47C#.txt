@@ -1,0 +1,26 @@
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        Console.WriteLine("Ingrese un número:");
+        int num = int.Parse(Console.ReadLine());
+        int divisor = 2;
+        bool esPrimo = true;
+
+        if (num < 2) esPrimo = false;
+
+        while (divisor < num)
+        {
+            if (num % divisor == 0)
+            {
+                esPrimo = false;
+            }
+            divisor++;
+        }
+
+        if (esPrimo) Console.WriteLine("Es primo.");
+        else Console.WriteLine("No es primo.");
+    }
+}

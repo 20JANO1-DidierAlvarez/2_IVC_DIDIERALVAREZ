@@ -1,0 +1,26 @@
+// Ejercicio 15 - Sumar hasta ingresar 9
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        int numero, suma = 0;
+
+        Console.WriteLine("Ingrese números, termine con el 9");
+
+        do
+        {
+            Console.Write("Ingrese un número: ");
+            numero = int.Parse(Console.ReadLine());
+
+            if (numero != 9)
+            {
+                suma = suma + numero;
+            }
+
+        } while (numero != 9);
+
+        Console.WriteLine("La suma total es: " + suma);
+    }
+}

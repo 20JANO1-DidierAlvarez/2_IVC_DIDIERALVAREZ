@@ -1,0 +1,19 @@
+// Ejercicio 16 - Primeros 20 múltiplos
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        int numero;
+
+        Console.Write("Ingrese un número: ");
+        numero = int.Parse(Console.ReadLine());
+
+        for (int contador = 1; contador <= 20; contador++)
+        {
+            int resultado = numero * contador;
+            Console.WriteLine(resultado);
+        }
+    }
+}

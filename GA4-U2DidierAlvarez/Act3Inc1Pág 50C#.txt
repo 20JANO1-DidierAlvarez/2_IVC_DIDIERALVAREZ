@@ -1,0 +1,24 @@
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        int suma = 0;
+        int n = 2;
+        do
+        {
+            bool esPrimo = true;
+            int j = 2;
+            while (j < n)
+            {
+                if (n % j == 0) esPrimo = false;
+                j++;
+            }
+            if (esPrimo) suma = suma + n;
+            n++;
+        } while (n <= 22);
+
+        Console.WriteLine("La suma de los primos es: " + suma);
+    }
+}

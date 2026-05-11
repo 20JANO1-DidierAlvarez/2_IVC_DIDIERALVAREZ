@@ -1,0 +1,16 @@
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        int monedas = 0;
+        // La condición se evalúa al inicio
+        while (monedas < 350)
+        {
+            Console.WriteLine("Sigue recolectando monedas...");
+            monedas += 50; // Simulación de incremento
+        }
+        Console.WriteLine("Acceso concedido al nuevo nivel.");
+    }
+}
