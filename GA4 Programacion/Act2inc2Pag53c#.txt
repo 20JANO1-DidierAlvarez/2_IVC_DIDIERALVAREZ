@@ -1,0 +1,14 @@
+// Ejercicio 13 - Números impares del 1 al 100
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        // Recorremos del 1 al 100, de 2 en 2
+        for (int i = 1; i <= 100; i = i + 2)
+        {
+            Console.WriteLine(i);
+        }
+    }
+}

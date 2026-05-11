@@ -1,0 +1,13 @@
+ using System;
+
+class Program
+{
+    static void Main()
+    {
+        for (int sello = 1; sello <= 8; sello++)
+        {
+            Console.WriteLine("Sello número: " + sello + " registrado.");
+        }
+        Console.WriteLine("¡Felicidades! Corte gratis obtenido.");
+    }
+}

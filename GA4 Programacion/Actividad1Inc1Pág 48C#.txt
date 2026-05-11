@@ -1,0 +1,20 @@
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        int cajonesLibres = 200;
+        int ingreso;
+
+        do
+        {
+            Console.WriteLine("Cajones libres: " + cajonesLibres);
+            Console.WriteLine("¿Ingresa un auto? (1=Si / 0=No):");
+            ingreso = int.Parse(Console.ReadLine());
+            if (ingreso == 1) cajonesLibres--;
+        } while (cajonesLibres > 0);
+
+        Console.WriteLine("Estacionamiento lleno.");
+    }
+}

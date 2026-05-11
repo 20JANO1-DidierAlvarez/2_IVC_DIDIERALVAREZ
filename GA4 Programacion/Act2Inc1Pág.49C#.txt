@@ -1,0 +1,20 @@
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        Console.WriteLine("Ingrese número para factorial:");
+        int n = int.Parse(Console.ReadLine());
+        int factorial = 1;
+        int i = 1;
+
+        do
+        {
+            factorial = factorial * i;
+            i++;
+        } while (i <= n);
+
+        Console.WriteLine("El factorial es: " + factorial);
+    }
+}

@@ -1,0 +1,11 @@
+Algoritmo act2inc2pag49
+    numero = 1
+        Escribir numero
+        numero = numero + 2
+		Mientras numero < 100
+			
+		FinMientras
+		
+		
+		
+FinAlgoritmo

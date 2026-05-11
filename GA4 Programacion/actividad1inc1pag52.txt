@@ -1,0 +1,24 @@
+internal class Program
+{
+    private static void Main(string[] args)
+    {
+        const int TOTAL_SELLOS = 8;
+        Console.WriteLine("************BIENVENIDOS A LA BARBERIA DE CRUP************************");
+        for (int i = 1; i <= TOTAL_SELLOS; ++)
+        {            Console.WriteLine("\nSello actual {0} de {i}", i, TOTAL_SELLOS);
+        Console.WriteLine("Presione cualquier tecla para registrar esta");
+        Console.ReadKey();
+        Console.WriteLine(">>>Sellos #{0} registrado correctamente...");
+        Console.WriteLine("¡CUPONERA COMPLETA!");
+        Console.WriteLine("OROZCO, HAS GANADO TU CORTE DE CABELLO GRATIS");
+        Console.WriteLine("************BIENVENIDOS A LA BARBERIA DE CRUP************************");
+        Console.WriteLine("\nPresione una tecla para cerrar...");
+        Console.ReadKey();
+
+
+        {
+           
+        }
+
+
+    }

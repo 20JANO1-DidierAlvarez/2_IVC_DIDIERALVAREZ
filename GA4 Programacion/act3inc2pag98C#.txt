@@ -1,0 +1,24 @@
+// Ejercicio 4 - Cuenta regresiva y suma
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        int numero, suma = 0;
+
+        Console.Write("Ingrese un número entero mayor que 1: ");
+        numero = int.Parse(Console.ReadLine());
+
+        Console.WriteLine("=== Cuenta Regresiva ===");
+
+        // Recorremos DESDE el número ingresado HASTA el 1, bajando de 1 en 1
+        for (int i = numero; i >= 1; i--)
+        {
+            Console.WriteLine(i);
+            suma = suma + i; // Acumulamos la suma
+        }
+
+        Console.WriteLine("La suma total de todos estos números es: " + suma);
+    }
+}

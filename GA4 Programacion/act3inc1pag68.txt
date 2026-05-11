@@ -1,0 +1,41 @@
+// Ejercicio 20 - Venta de boletos feria
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        int opcion, totalBoletos = 0, totalDinero = 0;
+        char continuar;
+
+        do
+        {
+            Console.WriteLine("1 - Niño ($10) | 2 - Adulto ($15)");
+            Console.Write("Ingrese tipo de boleto: ");
+            opcion = int.Parse(Console.ReadLine());
+
+            if (opcion == 1)
+            {
+                totalBoletos++;
+                totalDinero = totalDinero + 10;
+            }
+            else if (opcion == 2)
+            {
+                totalBoletos++;
+                totalDinero = totalDinero + 15;
+            }
+            else
+            {
+                Console.WriteLine("Opción inválida");
+            }
+
+            Console.WriteLine("Boletos vendidos: " + totalBoletos);
+            Console.WriteLine("Total acumulado: $" + totalDinero);
+
+            Console.Write("¿Vender otro? (S/N): ");
+            continuar = Console.ReadKey().KeyChar;
+            Console.WriteLine("");
+
+        } while (continuar == 'S' || continuar == 's');
+    }
+}

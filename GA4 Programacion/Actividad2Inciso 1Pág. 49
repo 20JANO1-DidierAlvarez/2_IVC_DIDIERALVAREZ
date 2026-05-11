@@ -1,0 +1,14 @@
+Algoritmo Inicio
+    Escribir "Ingrese un número para calcular su factorial:"
+    Leer n
+    factorial = 1
+    i = 1
+    Hacer
+        factorial = factorial * i
+        i = i + 1
+		Mientras i <= n
+			Escribir "El factorial es: ", factorial
+		Fin
+		
+		
+FinAlgoritmo
