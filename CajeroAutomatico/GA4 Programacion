@@ -6,7 +6,7 @@
 //Salir
 Algoritmo CajeroAutomatico
 	Definir saldo, deposito, retiro Como Real
-	Definir Opci髇 Como Entero
+	Definir Opci贸n Como Entero
 	Definir Intentos Como Entero
 	Definir pin, pinCorrecto Como Entero
 	saldo=10000
@@ -27,8 +27,8 @@ Algoritmo CajeroAutomatico
 				Escribir "4-- Salir"
 				Escribir "***********************************"
 				Escribir "Diga una opcion: "
-				Leer Opci髇
-				Segun Opci髇 Hacer
+				Leer Opci贸n
+				Segun Opci贸n Hacer
 					1:
 						Escribir Sin Saltar "Su saldo actual es: Q ", saldo
 					2:
@@ -49,10 +49,10 @@ Algoritmo CajeroAutomatico
 					4:
 						Escribir "Gracias por usar el cajero 5B"
 					De Otro Modo:
-						Escribir "Opcion Inv醠ida"
+						Escribir "Opcion Inv谩lida"
 				Fin Segun
 				
-			Hasta Que Opci髇==4
+			Hasta Que Opci贸n==4
 			//Termiinar mi programa
 			Intentos=3
 			SiNo
