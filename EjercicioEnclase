@@ -1,0 +1,43 @@
+internal class Program
+{
+    private static void Main(string[] args)
+    {
+        Console.WriteLine("DATOS ACADEMICOS\nNombre: Didier Alvarez" + "\n Grado: IV C" + "\ncLAVE: 1");
+        //CREAR E INICIALIZAR EL ARREGLO
+        int[] edadPersonas = new int[7];
+        int cantidadPersonasMayores = 0;
+        int CantidadPersonasmenor = 0;
+        int CantidadPersona = 0;
+        //LLENAR EL ARREGLO
+        for (int i = 0; i < edadPersonas.Length; i++)
+        {
+            {
+
+
+                Console.Write("Ingrese la edad de la persona" + (i+1) + ": ");
+                edadPersonas[i] = Convert.ToInt32(Console.ReadLine());
+                if (edadPersonas[i] >= 18)
+                {
+                    cantidadPersonasMayores++;
+                    //Cantidadpersonasmayores=cantidadpersonasmayores+1
+                }
+                else
+                {
+                    CantidadPersonasmenor++;
+                }
+                CantidadPersona++;
+            }
+
+            Console.WriteLine();
+            Console.WriteLine("Cantidad de personas mayores de edad" + cantidadPersonasMayores);
+            Console.WriteLine("Cantidad de personas menores de edad " + CantidadPersonasmenor);
+            Console.WriteLine("Cantidad de personas ingresadas:  "+CantidadPersona);
+
+
+
+        }
+
+
+    }
+}
+    
