@@ -1,0 +1,20 @@
+Algoritmo Color
+	Definir n Como Entero
+	Definir datos Como Cadena
+	Dimension datos[7]
+	datos[1] ="Cafe"
+	datos[2] = "Rojo"
+	datos[3] ="Verde"
+	datos[4] ="Azul"
+	datos[5]= "Morado"
+	datos[6]=" Naranja"
+	datos[7]=" Verde oscuro"
+	
+	Escribir Sin Saltar "Elige un numero del 1 al 7: "
+	leer n
+	Escribir "El color que escogiste fue,",datos[n]
+	
+
+	
+	
+FinAlgoritmo
