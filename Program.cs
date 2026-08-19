@@ -4,7 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace MiPrimeraApp_C2
+namespace EjerciciodeProgra
 {
     internal static class Program
     {

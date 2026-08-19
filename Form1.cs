@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace MiPrimeraApp_C2
+namespace EjerciciodeProgra
 {
     public partial class Form1 : Form
     {
@@ -18,16 +18,6 @@ namespace MiPrimeraApp_C2
         }
 
         private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void SALUDO_Click(object sender, EventArgs e)
-        {
-            label2.Text = "Esto es un saludo!!";
-        }
-
-        private void Form1_Load(object sender, EventArgs e)
         {
 
         }
